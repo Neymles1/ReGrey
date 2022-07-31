@@ -1772,8 +1772,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8984884575007129041, guid: ebdebac2af32be04e9bce884ef621e83, type: 3}
     - target: {fileID: 5737548875068715967, guid: e481822248898d04e9808a3d3ca78e5a, type: 3}
+      propertyPath: spread
+      value: 0.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 5737548875068715967, guid: e481822248898d04e9808a3d3ca78e5a, type: 3}
       propertyPath: canFire
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5737548875068715967, guid: e481822248898d04e9808a3d3ca78e5a, type: 3}
+      propertyPath: canJump
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5737548875068715967, guid: e481822248898d04e9808a3d3ca78e5a, type: 3}
+      propertyPath: bulletSpeed
+      value: 14.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 5737548875068715967, guid: e481822248898d04e9808a3d3ca78e5a, type: 3}
+      propertyPath: amountOfBullet
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5737548875068715967, guid: e481822248898d04e9808a3d3ca78e5a, type: 3}
       propertyPath: bulletTransform

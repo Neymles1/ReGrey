@@ -4,10 +4,13 @@ using System.Collections;
 public class Sensor_Prototype : MonoBehaviour {
 
     private int m_ColCount = 0;
-
+   
     private float m_DisableTimer;
 
-    private void OnEnable()
+
+ 
+
+        private void OnEnable()
     {
         m_ColCount = 0;
     }
@@ -31,6 +34,9 @@ public class Sensor_Prototype : MonoBehaviour {
 
     void Update()
     {
+
+        
+      
         m_DisableTimer -= Time.deltaTime;
     }
 

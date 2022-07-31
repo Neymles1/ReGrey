@@ -12,6 +12,8 @@ public class PrototypeHeroDemo : MonoBehaviour {
     [SerializeField] GameObject m_JumpDust;
     [SerializeField] GameObject m_LandingDust;
 
+
+ 
     private Animator            m_animator;
     private Rigidbody2D         m_body2d;
     private Sensor_Prototype    m_groundSensor;
@@ -35,6 +37,8 @@ public class PrototypeHeroDemo : MonoBehaviour {
     // Update is called once per frame
     void Update ()
     {
+
+     
         // Decrease timer that disables input movement. Used when attacking
         m_disableMovementTimer -= Time.deltaTime;
 
@@ -94,7 +98,8 @@ public class PrototypeHeroDemo : MonoBehaviour {
 
         // -- Handle Animations --
         //Jump
-        if (Input.GetButtonDown("Jump") && m_grounded && m_disableMovementTimer < 0.0f)
+       
+        if ((Input.GetButtonDown("Jump") && m_grounded && m_disableMovementTimer < 0.0f) ^ GameObject.Find("RotatePoint").GetComponent<Shooting>().canJump == true)
         {
             m_animator.SetTrigger("Jump");
             m_grounded = false;
